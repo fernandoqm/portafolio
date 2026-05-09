@@ -236,3 +236,62 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+/* ── 10. MINI SLIDERS PROYECTOS ── */
+
+document.querySelectorAll('.project-preview-slider')
+  .forEach((slider) => {
+
+    const slides = slider.querySelectorAll('.project-slide');
+
+    const prevBtn = slider.querySelector('.prev');
+
+    const nextBtn = slider.querySelector('.next');
+
+    let current = 0;
+
+    const showSlide = (index) => {
+
+      slides.forEach(slide => {
+        slide.classList.remove('active');
+      });
+
+      slides[index].classList.add('active');
+    };
+
+    nextBtn?.addEventListener('click', () => {
+
+      current++;
+
+      if (current >= slides.length) {
+        current = 0;
+      }
+
+      showSlide(current);
+    });
+
+    prevBtn?.addEventListener('click', () => {
+
+      current--;
+
+      if (current < 0) {
+        current = slides.length - 1;
+      }
+
+      showSlide(current);
+    });
+
+    // Auto slide opcional
+    setInterval(() => {
+
+      current++;
+
+      if (current >= slides.length) {
+        current = 0;
+      }
+
+      showSlide(current);
+
+    }, 5000);
+
+  });

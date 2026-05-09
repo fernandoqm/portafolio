@@ -1128,25 +1128,71 @@ ul { list-style: none; }
 }
 
 /* ═══════════════ PREVIEW PROYECTOS ═══════════════ */
-
-.project-preview {
+.project-preview-slider {
+  position: relative;
   width: 100%;
-  height: 180px;
-  border-radius: 14px;
+  height: 190px;
   overflow: hidden;
+  border-radius: 14px;
   margin-bottom: 1rem;
-  border: 1px solid rgba(255,255,255,0.06);
   background: #07111f;
+  border: 1px solid rgba(255,255,255,0.06);
 }
 
-.project-preview img {
+.project-slide {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+
+  opacity: 0;
+
+  transition:
+    opacity 0.4s ease,
+    transform 0.5s ease;
 }
 
-/* Zoom elegante */
-.project-card:hover .project-preview img {
-  transform: scale(1.05);
+.project-slide.active {
+  opacity: 1;
+}
+
+.project-card:hover .project-slide.active {
+  transform: scale(1.03);
+}
+
+/* BOTONES */
+
+.slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 34px;
+  height: 34px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(0,0,0,0.45);
+
+  color: white;
+
+  cursor: pointer;
+
+  z-index: 5;
+
+  transition: 0.3s ease;
+}
+
+.slide-btn:hover {
+  background: rgba(0,210,255,0.8);
+}
+
+.slide-btn.prev {
+  left: 10px;
+}
+
+.slide-btn.next {
+  right: 10px;
 }
