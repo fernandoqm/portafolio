@@ -60,9 +60,7 @@ ul { list-style: none; }
 ::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent2); }
 
-/* ══════════════════════════════════════
-   NAVBAR
-══════════════════════════════════════ */
+/* ═══════════════ NAVBAR ═══════════════ */
 .navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -134,9 +132,7 @@ ul { list-style: none; }
   transition: var(--transition);
 }
 
-/* ══════════════════════════════════════
-   HERO
-══════════════════════════════════════ */
+/* ═══════════════ HERO ═══════════════ */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -349,9 +345,7 @@ ul { list-style: none; }
   animation: scrollPulse 2s ease-in-out infinite;
 }
 
-/* ══════════════════════════════════════
-   SECTION SHARED
-══════════════════════════════════════ */
+/* ═══════════════ SECTION SHARED ═══════════════ */
 .section {
   padding: 100px 0;
 }
@@ -387,9 +381,7 @@ ul { list-style: none; }
   max-width: 400px;
 }
 
-/* ══════════════════════════════════════
-   BUTTONS
-══════════════════════════════════════ */
+/* ═══════════════ BUTTONS ═══════════════ */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -426,9 +418,7 @@ ul { list-style: none; }
 
 .btn-full { width: 100%; justify-content: center; }
 
-/* ══════════════════════════════════════
-   SOBRE MÍ
-══════════════════════════════════════ */
+/* ═══════════════ SOBRE MÍ ═══════════════ */
 .about-grid {
   display: grid;
   grid-template-columns: 260px 1fr;
@@ -546,7 +536,7 @@ ul { list-style: none; }
   color: var(--text);
 }
 
-/* ── Certificaciones inline ── */
+/* ── Certificaciones inline ── 
 .certs-title {
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -593,11 +583,9 @@ ul { list-style: none; }
   display: block;
   font-size: 0.7rem;
   color: var(--text-muted);
-}
+}*/
 
-/* ══════════════════════════════════════
-   HABILIDADES
-══════════════════════════════════════ */
+/* ═══════════════ HABILIDADES ═══════════════ */
 .skills-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -696,9 +684,7 @@ ul { list-style: none; }
   flex-shrink: 0;
 }
 
-/* ══════════════════════════════════════
-   PROYECTOS
-══════════════════════════════════════ */
+/* ═══════════════ PROYECTOS ═══════════════ */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -854,9 +840,7 @@ ul { list-style: none; }
 
 .gallery-item:hover .gallery-overlay { opacity: 1; }
 
-/* ══════════════════════════════════════
-   CONTACTO
-══════════════════════════════════════ */
+/* ═══════════════ CONTACTO ═══════════════ */
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -971,9 +955,7 @@ ul { list-style: none; }
   min-height: 20px;
 }
 
-/* ══════════════════════════════════════
-   FOOTER
-══════════════════════════════════════ */
+/* ═══════════════ FOOTER ═══════════════ */
 .footer {
   background: var(--bg-card);
   border-top: 1px solid var(--border);
@@ -1001,9 +983,7 @@ ul { list-style: none; }
   color: var(--text-muted);
 }
 
-/* ══════════════════════════════════════
-   LIGHTBOX
-══════════════════════════════════════ */
+/* ═══════════════ LIGHTBOX ═══════════════ */
 .lightbox {
   position: fixed;
   inset: 0;
@@ -1063,9 +1043,7 @@ ul { list-style: none; }
   color: var(--text-muted);
 }
 
-/* ══════════════════════════════════════
-   ANIMATIONS
-══════════════════════════════════════ */
+/* ═══════════════ ANIMATIONS ═══════════════ */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -1098,9 +1076,7 @@ ul { list-style: none; }
   transform: translateY(0);
 }
 
-/* ══════════════════════════════════════
-   RESPONSIVE
-══════════════════════════════════════ */
+/* ═══════════════ RESPONSIVE ═══════════════ */
 @media (max-width: 900px) {
   .hero {
     flex-direction: column;
