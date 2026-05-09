@@ -1126,3 +1126,27 @@ ul { list-style: none; }
   .hero-cta { flex-direction: column; }
   .btn { width: 100%; justify-content: center; }
 }
+
+/* ═══════════════ PREVIEW PROYECTOS ═══════════════ */
+
+.project-preview {
+  width: 100%;
+  height: 180px;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: #07111f;
+}
+
+.project-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Zoom elegante */
+.project-card:hover .project-preview img {
+  transform: scale(1.05);
+}
