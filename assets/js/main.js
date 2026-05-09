@@ -259,7 +259,7 @@ document.querySelectorAll('.project-preview-slider')
       slides[index].classList.add('active');
     };
 
-    nextBtn?.addEventListener('click', () => {
+    nextBtn.addEventListener('click', () => {
 
       current++;
 
@@ -270,7 +270,7 @@ document.querySelectorAll('.project-preview-slider')
       showSlide(current);
     });
 
-    prevBtn?.addEventListener('click', () => {
+    prevBtn.addEventListener('click', () => {
 
       current--;
 
@@ -280,18 +280,5 @@ document.querySelectorAll('.project-preview-slider')
 
       showSlide(current);
     });
-
-    // Auto slide opcional
-    setInterval(() => {
-
-      current++;
-
-      if (current >= slides.length) {
-        current = 0;
-      }
-
-      showSlide(current);
-
-    }, 5000);
 
   });
