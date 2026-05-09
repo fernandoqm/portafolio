@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <!-- ── NAVBAR ── -->
     <nav class="navbar" id="navbar">
@@ -49,5 +50,666 @@
         </li>
       </ul>
     </nav>
+
+    <!-- ═══════════════ SECCIÓN 1 — INICIO / HERO ═══════════════ -->
+    <section class="hero" id="inicio">
+      <!-- Parallax background (global, fixed) -->
+      <div class="parallax-bg" id="parallaxBg">
+        <div class="parallax-img" id="parallaxImg"></div>
+        <div class="parallax-grid"></div>
+        <div class="parallax-vignette"></div>
+        <div class="parallax-glow" id="parallaxGlow"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Hola, soy</p>
+        <h1 class="hero-name">
+          Fernando<br /><span class="accent">Quesada Mora</span>
+        </h1>
+        <p class="hero-roles">
+          <span class="role-tag">Analista de Sistemas</span>
+          <span class="role-sep">·</span>
+          <span class="role-tag">Desarrollador de Software</span>
+          <span class="role-sep">·</span>
+          <span class="role-tag">Líder TIC</span>
+        </p>
+        <p class="hero-sub">
+          +18 años construyendo soluciones tecnológicas en Costa Rica.<br />
+          Actualmente liderando el departamento de mantenimiento de software en
+          NCQ.
+        </p>
+        <div class="hero-cta">
+          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-outline">Contáctame</a>
+        </div>
+      </div>
+      <div class="hero-code-card">
+        <div class="code-header">
+          <span class="dot red"></span><span class="dot yellow"></span
+          ><span class="dot green"></span>
+          <span class="code-filename">perfil.json</span>
+        </div>
+        <pre class="code-body"><code>{
+  <span class="ck">"nombre"</span>: <span class="cv">"Fernando Quesada"</span>,
+  <span class="ck">"rol"</span>: <span class="cv">"Líder de Software"</span>,
+  <span class="ck">"empresa"</span>: <span class="cv">"NCQ"</span>,
+  <span class="ck">"experiencia"</span>: <span class="cn">18</span>,
+  <span class="ck">"ubicacion"</span>: <span class="cv">"Pérez Zeledón, CR"</span>,
+}</code></pre>
+      </div>
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ SECCIÓN 2 — SOBRE MÍ ═══════════════ -->
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2 class="section-title">Sobre mí</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo-wrap">
+            <div class="about-photo-frame">
+              <img
+                src="assets/img/profile.jpg"
+                alt="Fernando Quesada Mora"
+                class="about-photo"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="about-photo-placeholder">
+                <span>FQM</span>
+              </div>
+            </div>
+            <div class="about-badge">
+              <span class="badge-years">18+</span>
+              <span class="badge-label">años de<br />experiencia</span>
+            </div>
+          </div>
+
+          <div class="about-text">
+            <p class="about-lead">
+              Soy un profesional en sistemas con más de 18 años de trayectoria
+              en desarrollo de software, soporte técnico y gestión de proyectos
+              tecnológicos en Costa Rica.
+            </p>
+            <p>
+              Actualmente me desempeño como
+              <strong
+                >Líder del Departamento de Mantenimiento de Software en
+                NCQ</strong
+              >, cargo que ocupo desde hace 6 años, donde además capacito e
+              induzco a los nuevos desarrolladores del equipo.
+            </p>
+            <p>
+              Me apasiona la comunicación efectiva, el trabajo en equipo y la
+              mejora continua. He trabajado en instituciones como
+              <strong>ASECCSS</strong>, <strong>Club Los Jaúles</strong> ,
+              <strong>Coopealianza R.L.</strong> y
+              <strong>Banco Promerica</strong>, adquiriendo experiencia tanto en
+              desarrollo de software como en infraestructura de redes y soporte
+              TIC.
+            </p>
+
+            <div class="about-info-grid">
+              <div class="info-item">
+                <span class="info-icon">📍</span>
+                <div>
+                  <span class="info-label">Ubicación</span>
+                  <span class="info-value">Pérez Zeledón, San José, CR</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">📞</span>
+                <div>
+                  <span class="info-label">Teléfono</span>
+                  <span class="info-value">8564-9198</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">✉️</span>
+                <div>
+                  <span class="info-label">Email</span>
+                  <span class="info-value">fernando.quesadam@gmail.com</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">🏢</span>
+                <div>
+                  <span class="info-label">Empresa actual</span>
+                  <span class="info-value">NCQ (6 años)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-certs">
+              <h3 class="certs-title">Certificaciones</h3>
+              <div class="certs-grid">
+                <div
+                  class="cert-card"
+                  data-img="assets/img/cert_android_01.jpeg"
+                >
+                  <span class="cert-icon">📱</span>
+                  <div>
+                    <span class="cert-name">Android con Java</span>
+                    <span class="cert-org">MICITT — CECI · 2021</span>
+                  </div>
+                </div>
+                <div
+                  class="cert-card"
+                  data-img="assets/img/cert_javascript.jpeg"
+                >
+                  <span class="cert-icon">🟨</span>
+                  <div>
+                    <span class="cert-name">JavaScript Essentials 1</span>
+                    <span class="cert-org">MICITT — LINC · 2023</span>
+                  </div>
+                </div>
+                <div class="cert-card" data-img="assets/img/cert_sql_01.jpeg">
+                  <span class="cert-icon">🗄️</span>
+                  <div>
+                    <span class="cert-name">SQL</span>
+                    <span class="cert-org">MICITT — CECI · 2022</span>
+                  </div>
+                </div>
+                <div class="cert-card">
+                  <span class="cert-icon">🐙</span>
+                  <div>
+                    <span class="cert-name">GIT + GitHub</span>
+                    <span class="cert-org">Udemy · Oct 2024</span>
+                  </div>
+                </div>
+                <div class="cert-card">
+                  <span class="cert-icon">💻</span>
+                  <div>
+                    <span class="cert-name">Programación en C#</span>
+                    <span class="cert-org">Udemy · Nov 2024</span>
+                  </div>
+                </div>
+                <div class="cert-card">
+                  <span class="cert-icon">✨</span>
+                  <div>
+                    <span class="cert-name">Clean Code</span>
+                    <span class="cert-org">Udemy · May 2023</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ SECCIÓN 3 — HABILIDADES ═══════════════ -->
+    <section class="section section-alt" id="habilidades">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2 class="section-title">Habilidades</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skills-group">
+            <h3 class="skills-group-title">
+              <span class="skills-group-icon">⚙️</span> Lenguajes &amp;
+              Tecnologías
+            </h3>
+            <div class="skill-bars">
+              <div class="skill-bar-item" data-level="90">
+                <div class="skill-bar-top">
+                  <span>VB.Net / VB6</span><span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item" data-level="80">
+                <div class="skill-bar-top">
+                  <span>SQL Server</span><span class="skill-pct">80%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item" data-level="75">
+                <div class="skill-bar-top">
+                  <span>C# / .NET</span><span class="skill-pct">75%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item" data-level="70">
+                <div class="skill-bar-top">
+                  <span>JavaScript</span><span class="skill-pct">70%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item" data-level="65">
+                <div class="skill-bar-top">
+                  <span>HTML / CSS</span><span class="skill-pct">65%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item" data-level="60">
+                <div class="skill-bar-top">
+                  <span>PHP / MySQL</span><span class="skill-pct">60%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill"></div>
+                </div>
+              </div>
+          </div>
+
+          <div class="skills-right">
+            <div class="skills-group">
+              <h3 class="skills-group-title">
+                <span class="skills-group-icon">🌐</span> Redes &amp;
+                Infraestructura
+              </h3>
+              <div class="skill-tags">
+                <span class="stag">Cableado estructurado</span>
+                <span class="stag">Servidores Windows</span>
+                <span class="stag">Linux básico</span>
+                <span class="stag">CCNA Módulo I</span>
+                <span class="stag">Office 365</span>
+              </div>
+            </div>
+
+            <div class="skills-group">
+              <h3 class="skills-group-title">
+                <span class="skills-group-icon">🛠️</span> Herramientas
+              </h3>
+              <div class="skill-tags">
+                <span class="stag">Git / GitHub</span>
+                <span class="stag">Visual Studio</span>
+                <span class="stag">Android Studio</span>
+                <span class="stag">Crystal Reports</span>
+                <span class="stag">WordPress</span>
+                <span class="stag">SQL</span>
+                <span class="stag">Firestore</span>
+              </div>
+            </div>
+
+            <div class="skills-group">
+              <h3 class="skills-group-title">
+                <span class="skills-group-icon">🤝</span> Habilidades blandas
+              </h3>
+              <div class="soft-skills">
+                <div class="soft-item">
+                  <span class="soft-dot"></span>
+                  Liderazgo de equipos de desarrollo
+                </div>
+                <div class="soft-item">
+                  <span class="soft-dot"></span>
+                  Capacitación e inducción de personal
+                </div>
+                <div class="soft-item">
+                  <span class="soft-dot"></span>
+                  Comunicación efectiva
+                </div>
+                <div class="soft-item">
+                  <span class="soft-dot"></span>
+                  Análisis y solución de problemas
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ SECCIÓN 4 — PROYECTOS ═══════════════ -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <h2 class="section-title">Proyectos</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card featured">
+            <div class="project-card-top">
+              <span class="project-icon">💰</span>
+              <div class="project-badges">
+                <span class="pbadge">VB6</span>
+                <span class="pbadge">SQL Server</span>
+                <span class="pbadge">Crystal Reports</span>
+              </div>
+            </div>
+            <h3 class="project-title">
+              Sistema de Integración Financiera (SIF)
+            </h3>
+            <span class="project-company">ASECCSS</span>
+            <p class="project-desc">
+              Desarrollo, mantenimiento y soporte de los módulos de
+              Apalancamientos, Cajas, Cobro Administrativo y Cartera de Crédito
+              para la asociación solidarista.
+            </p>
+            <div class="project-meta">
+              <span class="pmeta-item">👤 Participación: 60%</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-top">
+              <span class="project-icon">🚪</span>
+              <div class="project-badges">
+                <span class="pbadge">VB6</span>
+                <span class="pbadge">SQL Server</span>
+              </div>
+            </div>
+            <h3 class="project-title">Sistema Control de Ingreso (SCI)</h3>
+            <span class="project-company">Club Los Jaúles</span>
+            <p class="project-desc">
+              Soporte y mantenimiento integral del sistema de control de acceso
+              de socios del club. Desarrollo 100% propio.
+            </p>
+            <div class="project-meta">
+              <span class="pmeta-item">👤 Participación: 100%</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-top">
+              <span class="project-icon">🗳️</span>
+              <div class="project-badges">
+                <span class="pbadge">VB6</span>
+                <span class="pbadge">SQL Server</span>
+              </div>
+            </div>
+            <h3 class="project-title">
+              Sistema de Ingreso y Votación Electrónica
+            </h3>
+            <span class="project-company">ASECCSS</span>
+            <p class="project-desc">
+              Gestión de asambleas, generación de consultas y verificación de
+              datos para procesos de votación electrónica institucional.
+            </p>
+            <div class="project-meta">
+              <span class="pmeta-item">👤 Participación: 100%</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-top">
+              <span class="project-icon">🌐</span>
+              <div class="project-badges">
+                <span class="pbadge">WordPress</span>
+                <span class="pbadge">MySQL</span>
+              </div>
+            </div>
+            <h3 class="project-title">Sitio Web Institucional</h3>
+            <span class="project-company">Club Los Jaúles</span>
+            <p class="project-desc">
+              Diseño y creación del sitio web oficial del club. Proyecto en
+              desarrollo activo con mejoras continuas.
+            </p>
+            <div class="project-meta">
+              <span class="pmeta-item">👤 Participación: 100%</span>
+              <span class="pmeta-item active">🟢 Activo</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-top">
+              <span class="project-icon">📡</span>
+              <div class="project-badges">
+                <span class="pbadge">Fibra óptica</span>
+                <span class="pbadge">Ubiquiti</span>
+              </div>
+            </div>
+            <h3 class="project-title">Migración e Implementación de Red</h3>
+            <span class="project-company">Club Los Jaúles</span>
+            <p class="project-desc">
+              Migración de red UTP a fibra óptica, cambio de proveedor de cable
+              coaxial y montaje de red inalámbrica empresarial con antenas
+              Ubiquiti.
+            </p>
+            <div class="project-meta">
+              <span class="pmeta-item">👤 Participación: 100%</span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-top">
+              <span class="project-icon">🏢</span>
+              <div class="project-badges">
+                <span class="pbadge">Liderazgo</span>
+                <span class="pbadge">Capacitación</span>
+              </div>
+            </div>
+            <h3 class="project-title">Liderazgo Departamento de Software</h3>
+            <span class="project-company">NCQ (6 años)</span>
+            <p class="project-desc">
+              Liderazgo del equipo de mantenimiento de software, coordinación de
+              proyectos e inducción de nuevos desarrolladores dentro de la
+              organización.
+            </p>
+            <div class="project-meta">
+              <span class="pmeta-item active">🟢 Actual</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Galería de certificados -->
+        <div class="certs-gallery-section">
+          <h3 class="gallery-title">Galería de Certificados</h3>
+          <div class="gallery-grid">
+            <div
+              class="gallery-item"
+              onclick="
+                openLightbox(
+                  'assets/img/cert_android_01.jpeg',
+                  'Desarrollo de Aplicaciones Android con Java',
+                )
+              "
+            >
+              <img
+                src="assets/img/cert_android_01.jpeg"
+                alt="Certificado Android con Java"
+              />
+              <div class="gallery-overlay">
+                <span>Android con Java</span>
+              </div>
+            </div>
+            <div
+              class="gallery-item"
+              onclick="
+                openLightbox(
+                  'assets/img/cert_android_02.jpeg',
+                  'Android con Java — Contenido del curso',
+                )
+              "
+            >
+              <img
+                src="assets/img/cert_android_02.jpeg"
+                alt="Certificado Android con Java - detalle"
+              />
+              <div class="gallery-overlay">
+                <span>Android — Detalle</span>
+              </div>
+            </div>
+            <div
+              class="gallery-item"
+              onclick="
+                openLightbox(
+                  'assets/img/cert_javascript.jpeg',
+                  'JavaScript Essentials 1',
+                )
+              "
+            >
+              <img
+                src="assets/img/cert_javascript.jpeg"
+                alt="Certificado JavaScript"
+              />
+              <div class="gallery-overlay">
+                <span>JavaScript Essentials</span>
+              </div>
+            </div>
+            <div
+              class="gallery-item"
+              onclick="
+                openLightbox('assets/img/cert_sql_01.jpeg', 'SQL — Certificado')
+              "
+            >
+              <img src="assets/img/cert_sql_01.jpeg" alt="Certificado SQL" />
+              <div class="gallery-overlay">
+                <span>SQL</span>
+              </div>
+            </div>
+            <div
+              class="gallery-item"
+              onclick="
+                openLightbox(
+                  'assets/img/cert_sql_02.jpeg',
+                  'SQL — Contenido del curso',
+                )
+              "
+            >
+              <img
+                src="assets/img/cert_sql_02.jpeg"
+                alt="Certificado SQL - detalle"
+              />
+              <div class="gallery-overlay">
+                <span>SQL — Detalle</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+       SECCIÓN 5 — CONTACTO
+  ══════════════════════════════════════ -->
+    <section class="section section-alt" id="contacto">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <h2 class="section-title">Contacto</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-info">
+            <p class="contact-intro">
+              ¿Tienes un proyecto en mente o quieres conversar sobre
+              oportunidades? Estoy disponible para escucharte.
+            </p>
+            <div class="contact-cards">
+              <a href="tel:85649198" class="contact-card">
+                <span class="contact-card-icon">📞</span>
+                <div>
+                  <span class="contact-card-label">Teléfono</span>
+                  <span class="contact-card-value">8564-9198</span>
+                </div>
+              </a>
+              <a href="mailto:fernando.quesadam@gmail.com" class="contact-card">
+                <span class="contact-card-icon">✉️</span>
+                <div>
+                  <span class="contact-card-label">Email</span>
+                  <span class="contact-card-value"
+                    >fernando.quesadam@gmail.com</span
+                  >
+                </div>
+              </a>
+              <div class="contact-card">
+                <span class="contact-card-icon">📍</span>
+                <div>
+                  <span class="contact-card-label">Ubicación</span>
+                  <span class="contact-card-value"
+                    >Pérez Zeledón, San José, CR</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Tu nombre completo"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="tucorreo@ejemplo.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject">Asunto</label>
+              <input
+                type="text"
+                id="subject"
+                placeholder="¿En qué puedo ayudarte?"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Escribe tu mensaje aquí..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Enviar mensaje</span>
+              <span class="btn-arrow">→</span>
+            </button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="brand-bracket">&lt;</span>FQM<span class="brand-bracket"
+            >/&gt;</span
+          >
+        </div>
+        <p class="footer-copy">
+          © 2025 Fernando Quesada Mora · Pérez Zeledón, Costa Rica
+        </p>
+        <p class="footer-built">
+          Construido con <span class="accent">❤</span> y código limpio
+        </p>
+      </div>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+      <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+      <div class="lightbox-content" onclick="event.stopPropagation()">
+        <img id="lightboxImg" src="" alt="" />
+        <p id="lightboxCaption"></p>
+      </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
